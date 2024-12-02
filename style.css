@@ -1,0 +1,405 @@
+:root {--rileypink: #ffe7e7;}
+:root {--rileywhite: #f9fbf4;}
+:root {--rileylightgreen: #e4f5cb;}
+:root {--rileydarkgreen: #626F4E;}
+
+
+body {
+    background-color: var(--rileypink);
+    overflow-x: hidden;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 100vh 80vh 7%;
+    grid-template-columns: 1fr 1fr;
+}
+
+#nav {
+    display: flex;
+    grid-row: 1/2;
+    grid-column: 1/3;
+    background-color: var(--rileylightgreen);
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+}
+
+#logo {
+    display: flex;
+    margin: 20px;
+    transition: width 1s;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+#nav ul li {
+    list-style-type: none;
+    margin: 20px 20px;
+    font-size: 1.4em;
+    transition: margin 1s, font-size 1s;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    background-color: var(--rileydarkgreen);
+    color: var(--rileywhite);
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: color 1s, background-color 1s;
+}
+
+#nav ul li a:hover {
+    color: var(--rileydarkgreen);
+    background-color: var(--rileywhite)
+}
+
+#nav ul li a:active {
+    font-weight: 500;
+}
+
+#figureleft {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-image: url(images/butterflymeflying.gif);
+    background-size: cover;
+}
+
+#figcaptionright {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+}
+
+#figcaptionright h1 {
+    display: inline;
+    margin: 10vh;
+    position: relative;
+    top: 150px;
+    font-size: 15vh;
+    color: var(--rileydarkgreen);
+    font-family: "Marhey";
+    font-weight: 500;
+    transition: transform 3s;
+}
+
+#figcaptionright h1:hover {
+    display: inline-block;
+    transform: scale(2) rotate(360deg);
+}
+
+#figcaptionright h3::first-line {
+    font-weight: 500;
+}
+
+
+#figcaptionright h3 {
+    display: inline-block;
+    position: relative;
+    top: 200px;
+    font-size: 5vh;
+    color: var(--rileydarkgreen);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 200;
+    transition: font-size 1s;
+}
+
+#figcaptionleft {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    width: 45vw;
+    margin: auto;
+    line-height: 1.5em;
+    font-size: 2.5vh;
+    position: relative;
+    color: var(--rileydarkgreen);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    transition: font-size 1s;
+}
+
+#figcaptionleft::first-line {
+    font-weight: 800;
+}
+
+#figcaptionleft::first-letter {
+    font-size: 4em;
+    font-family: "Marhey";
+}
+
+#figureright {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    background-image: url(images/flowers.png);
+    background-size: cover;
+}
+
+#footer {
+    grid-row: 4/5;
+    grid-column: 1/3;
+    background-color: var(--rileydarkgreen);
+    align-items: center;
+}
+
+#footer p {
+    color: var(--rileywhite);
+    text-align: center;
+    margin-left: 20px;
+    font-family: "Marhey", sans-serif;
+    font-weight: 200;
+}
+
+/* ABOUT PAGE */
+
+
+#about-container {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 10% 80vh 80vh 7%;
+        grid-template-columns: 1fr 1fr 1fr;
+        overflow-x: hidden;
+}
+
+#about-nav {
+    display: flex;
+    grid-row: 1/2;
+    grid-column: 1/5;
+    background-color: var(--rileylightgreen);
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+}
+
+#about-nav ul {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+#about-nav ul li {
+    list-style-type: none;
+    margin: 20px 20px;
+    font-size: 1.4em;
+    transition: margin 1s, font-size 1s;
+}
+
+#about-nav ul li a {
+    text-decoration: none;
+    background-color: var(--rileydarkgreen);
+    color: var(--rileywhite);
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s;
+}
+
+#about-nav ul li a:hover {
+    color: var(--rileydarkgreen);
+    background-color: var(--rileywhite)
+}
+
+#about-nav ul li:active {
+    font-weight: 500;
+}
+
+#background {
+    grid-row: 2/4;
+    grid-column: 1/4;
+    background-color: var(--rileypink);
+    background-image: url(images/bgflowers.jpeg);
+    background-size: contain;
+    background-blend-mode: soft-light;
+}
+
+#figcapleft {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+}
+
+#figcapleft h1 {
+    font-size: 5vh;
+    color: var(--rileydarkgreen);
+    font-family: "Marhey";
+    font-weight: 500;
+    margin-left: 50px;
+    position: relative;
+    /* top: 80px; */
+    line-height: 2.5em;
+    transition: font-size 1s, top 1s, margin 1s;
+}
+
+#figcapleft h1::after {
+    display: inline-block;
+    content: "Riley";
+    position: absolute;
+    margin-left: 15px;
+    transition: transform 3s;
+}
+
+#figcapleft h1:hover:after {
+    transform: scale(2) translate(30px) rotate(360deg);
+}
+
+#figcapleft p {
+    line-height: 1.5em;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: var(--rileydarkgreen);
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.5vh;
+    font-weight: 400;
+    position: relative;
+    top: -20px;
+    transition: font-size 1s, top 1s, margin 1s;
+}
+
+#figright {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    background-image: url(images/flowerpainting.jpg);
+    background-size: cover;
+}
+
+#figleft {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-image: url(images/tattoo.jpeg);
+    background-size: cover;
+}
+
+#figcapright {
+    grid-row: 3/4;
+    grid-column: 2/4;
+    font-family: "Josefin Sans";
+    color: var(--rileydarkgreen);
+    line-height: 1.5em;
+    margin: 40px;
+    font-size: 2.5vh;
+    position: relative;
+    top: -35px;
+    display: flex;
+    flex-direction: column;
+    transition: font-size 1s, line-height 1s;
+}
+
+#figcapright h3 {
+    font-family: "Marhey";
+    font-size: 5vh;
+    position: relative;
+    top: -5px;
+    transition: font-size 1s, letter-spacing 1s;
+}
+
+#figcapright h3:hover {
+    display: inline-block;
+    letter-spacing: 10px;
+}
+
+#about-footer {
+    grid-row: 4/5;
+    grid-column: 1/4;
+    background-color: var(--rileydarkgreen);
+    align-items: center;
+}
+
+#about-footer p {
+    color: var(--rileywhite);
+    text-align: center;
+    margin-left: 20px;
+    font-family: "Marhey", sans-serif;
+    font-weight: 200;
+}
+
+
+@media (max-width: 768px) {
+
+#logo {
+    width: 30px;
+}
+
+#nav ul li {
+    font-size: 100%;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+#figcaptionright h1 {
+    font-size: 400%;
+}
+
+#figcaptionright h3 {
+    font-size: 4vh;
+}
+
+#figcaptionleft {
+    font-size: 2vh;
+    margin-left: 20px;
+}
+
+#about-nav ul li {
+    font-size: 100%;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+#figcapleft h1 {
+    font-size: 4vh;
+    top: 10px;
+    margin: 10px;
+}
+
+#figcapleft p {
+    font-size: 2vh;
+    margin: 10px;
+    top: 20px;
+}
+
+#about-container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 60% 70vh 7%;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow-x: hidden;
+}
+
+#figcapright {
+    display: flex;
+    flex-direction: column;
+}
+
+#figcapright h3 {
+    font-size: 3.5vh;
+    margin: 10px;
+    margin: 10px;
+}
+
+#figcapright p {
+    font-size: 2vh;
+    margin: 5px;
+    top: 20px;
+    line-height: auto;
+}
+
+}
+@media (max-width: 555px) {
+    #figcapleft p {
+        font-size: 1.5vh;
+    }
+
+    #figcapright p {
+        font-size: 70%;
+        line-height: 15px;
+    }
+
+    #figcapleft h1::after {
+        margin-left: 5px;
+    }
+}
